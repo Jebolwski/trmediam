@@ -1,0 +1,255 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  overflow-x: hidden;
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.icon > img {
+  width: 90px;
+}
+
+.header-div {
+  background-color: #e27032;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 6px;
+}
+
+.top-part {
+  background-color: #4255dc;
+  border-bottom-right-radius: 200px;
+  padding: 10px;
+}
+
+.login-button {
+  width: 100%;
+  background-color: #e27032;
+  color: white;
+  border: none;
+  padding: 8px 10px;
+}
+
+.parag {
+  width: 350px;
+  color: rgb(190, 190, 190);
+}
+
+.tum-servisler {
+  background-color: transparent;
+  color: white;
+  border-radius: 3px;
+  padding: 10px 20px;
+  border: 1px solid white;
+}
+
+form {
+  width: 400px;
+}
+
+form input {
+  width: 100%;
+  border-radius: 3px;
+  padding: 4px;
+  border: 1px solid #c0c0c0;
+}
+
+form input:focus {
+  border: 1px solid #c0c0c0;
+  outline: 0;
+}
+
+.social-media-div {
+  border: 1px solid #eff1f6;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.social-media-div p {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.social-media-div img {
+  width: 30px;
+}
+
+.servis-list {
+  background-color: #4255dc;
+  border-radius: 3px;
+  color: white;
+  border: 0;
+  padding: 10px;
+}
+
+.free-register {
+  background-color: #e27032;
+  border-radius: 3px;
+  color: white;
+  border: 0;
+  padding: 10px;
+}
+
+.right-div-phone {
+  width: 50%;
+  border-radius: 50px 0 0 50px;
+  background: linear-gradient(
+    311deg,
+    rgba(221, 129, 0, 1) 0%,
+    rgba(255, 213, 158, 1) 100%
+  );
+}
+
+.bottom-divs {
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding: 5px;
+}
+
+.register-now {
+  background-color: #4255dc;
+}
+
+.register-now button {
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+}
+
+.footer-div {
+  background-color: #1e30ac;
+  padding: 10px 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .form-login {
+    width: 100%;
+  }
+  .header-left-side {
+    width: 100%;
+  }
+  .parag {
+    width: 80%;
+  }
+}
