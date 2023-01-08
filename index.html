@@ -17,7 +17,9 @@
       <div class="icon">
         <img src="./assets/images/icon.png" />
       </div>
-      <div class="d-md-flex justify-content-evenly gap-4 d-none">
+      <div
+        class="d-md-flex justify-content-evenly align-items-center gap-4 d-none"
+      >
         <a href="#" class="header-div">Blog Yazılarımız</a>
         <a href="#" class="header-div">API</a>
         <a href="#" class="header-div">Servis Listesi</a>
@@ -34,11 +36,14 @@
         ></i>
       </div>
       <div class="toggle-sidebar">
-        <div class="d-flex justify-content-between align-items-center">
+        <div
+          class="d-flex justify-content-between align-items-center"
+          style="padding: 0 5.8% 0 15px"
+        >
           <div class="icon">
             <img src="./assets/images/icon.png" />
           </div>
-          <div class="d-block d-md-none text-white">
+          <div class="d-block text-white">
             <i
               class="fa-solid fa-bars fa-2xl bar-icon"
               style="cursor: pointer"
@@ -57,14 +62,15 @@
     </header>
     <div class="top-part">
       <div
-        class="d-flex container justify-content-center justify-content-md-between flex-wrap gap-3 mt-5"
+        class="d-flex container justify-content-center flex-wrap mt-5"
+        style="gap: 15%"
       >
-        <div class="header-left-side">
+        <div class="header-left-side my-3">
           <h2 class="text-white">
             Türkiyenin En Güncel<br />
             Sosyal Medya Paneli!
           </h2>
-          <p class="parag my-3">
+          <p class="parag my-3" style="line-height: 24px">
             Tüm sosyal medya ağlarını tek panelden kaliteli ve ucuza yönetin.
             Günümüzün en popüler sosyal ağlarında hizmet sağlıyoruz Instagram,
             Twitter, Facebook, Youtube, TikTok, Spotify ve daha birçok
@@ -72,7 +78,7 @@
           </p>
           <button class="tum-servisler">Tüm Servisler</button>
         </div>
-        <div class="bg-white form-login rounded-3 px-4 py-1">
+        <div class="bg-white form-login rounded-3 px-4 my-3 py-1">
           <h3 class="text-center fw-semibold">Hoşgeldiniz</h3>
           <form style="width: fit-content">
             <p class="mt-4 mb-3" style="font-size: 14px">
@@ -89,7 +95,7 @@
               <input type="password" name="password" />
             </div>
             <div
-              class="justify-content-between d-flex flex-wrap my-3 gap-2 p-2"
+              class="justify-content-between d-flex flex-wrap my-3 gap-5 p-2"
             >
               <div class="d-flex align-items-center text-nowrap gap-1">
                 <div>
@@ -101,11 +107,7 @@
                 >Şifreni mi Unuttun?</a
               >
             </div>
-            <input
-              type="submit"
-              value="Giriş Yap"
-              class="login-button mt-2 mb-4"
-            />
+            <input type="submit" value="Giriş Yap" class="login-button" />
           </form>
         </div>
       </div>
@@ -113,21 +115,21 @@
     <div class="container">
       <div class="social-media pt-2">
         <h4 class="text-center mb-3">Sosyal medya bizim işimiz</h4>
-        <div class="d-flex justify-content-around flex-wrap gap-3">
+        <div class="d-flex justify-content-center flex-wrap gap-5">
           <div class="social-media-div">
-            <img src="./assets/images/instagram.png" />
+            <img src="./assets/images/instagram.png" style="width: 38px" />
             <p>Instagram</p>
           </div>
           <div class="social-media-div">
-            <img src="./assets/images/facebook.png" />
+            <img src="./assets/images/facebook.png" style="width: 38px" />
             <p>Facebook</p>
           </div>
           <div class="social-media-div">
-            <img src="./assets/images/twitter.png" />
+            <img src="./assets/images/twitter.png" style="width: 38px" />
             <p>Twitter</p>
           </div>
           <div class="social-media-div">
-            <img src="./assets/images/tiktok.png" />
+            <img src="./assets/images/tiktok.png" style="width: 38px" />
             <p>TikTok</p>
           </div>
         </div>
@@ -137,8 +139,8 @@
       <div>
         <div class="d-flex mt-4">
           <div class="d-flex align-items-center gap-3">
-            <img src="./assets/images/verified.png" style="width: 50px" />
-            <p class="h4">
+            <img src="./assets/images/verified.png" style="width: 75px" />
+            <p class="h3">
               Uygun fiyat ve hızlı <br />
               teslimat garantisi!
             </p>

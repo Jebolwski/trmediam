@@ -130,7 +130,7 @@ body {
 }
 
 .header {
-  padding: 20px 6%;
+  padding: 20px 9%;
   background-color: #4255dc;
 }
 .icon > img {
@@ -142,12 +142,21 @@ body {
   color: white;
   text-decoration: none;
   padding: 10px 22px;
-  border-radius: 6px;
-  transition: 0.3s;
+  border-radius: 5px;
+  transition: 0.2s;
 }
 
 .header-div:hover {
-  color: rgb(228, 228, 228);
+  background-color: #ffab5a;
+  transition: 0.2s;
+  margin-bottom: 10px;
+  text-decoration: none;
+  padding: 10px 22px;
+  border-radius: 6px;
+}
+
+.header-div:hover {
+  color: white;
   transition: 0.3s;
 }
 
@@ -162,29 +171,43 @@ body {
   background-color: #e27032;
   color: white;
   border: none;
-  padding: 8px 10px;
+  font-size: 1.1em;
+  padding: 11px 14px;
+  transition: 0.2s;
+}
+
+.login-button:hover {
+  background-color: #ffab5a;
+  transition: 0.2s;
+  margin-top: 3px;
+  text-decoration: none;
+}
+
+.login-button:focus {
+  border: 0;
 }
 
 .parag {
   width: 350px;
-  color: rgb(190, 190, 190);
+  color: white;
 }
 
 .tum-servisler {
   background-color: transparent;
   color: white;
   border-radius: 3px;
-  padding: 10px 20px;
+  padding: 12px 30px;
   border: 1px solid white;
 }
 
 form {
-  width: 400px;
+  max-width: 400px;
+  min-height: 290px;
 }
 
 form input {
   border-radius: 3px;
-  padding: 4px;
+  padding: 6px;
   width: 100%;
   border: 1px solid #c0c0c0;
 }
@@ -199,7 +222,7 @@ form input:focus {
   display: flex;
   gap: 5px;
   align-items: center;
-  padding: 8px;
+  padding: 12px;
   border-radius: 10px;
   background-color: white;
 }
