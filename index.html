@@ -18,13 +18,13 @@
         <img src="./assets/images/icon.png" />
       </div>
       <div class="d-md-flex justify-content-evenly gap-4 d-none">
-        <div class="header-div">Blog Yazılarımız</div>
-        <div class="header-div">API</div>
-        <div class="header-div">Servis Listesi</div>
-        <div class="d-flex align-items-center gap-1 header-div">
+        <a href="#" class="header-div">Blog Yazılarımız</a>
+        <a href="#" class="header-div">API</a>
+        <a href="#" class="header-div">Servis Listesi</a>
+        <a href="#" class="d-flex align-items-center gap-1 header-div">
           <i class="fa-solid fa-user"></i>
           <div>Kayıt Ol</div>
-        </div>
+        </a>
       </div>
       <div class="d-block d-md-none text-white">
         <i
@@ -34,6 +34,18 @@
         ></i>
       </div>
       <div class="toggle-sidebar">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="icon">
+            <img src="./assets/images/icon.png" />
+          </div>
+          <div class="d-block d-md-none text-white">
+            <i
+              class="fa-solid fa-bars fa-2xl bar-icon"
+              style="cursor: pointer"
+              onclick="toggle()"
+            ></i>
+          </div>
+        </div>
         <div class="sidebar-div">Blog Yazılarımız</div>
         <div class="sidebar-div">API</div>
         <div class="sidebar-div">Servis Listesi</div>
@@ -61,7 +73,7 @@
           <button class="tum-servisler">Tüm Servisler</button>
         </div>
         <div class="bg-white form-login rounded-3 px-4 py-1">
-          <h3 class="text-center fw-bold">Hoşgeldiniz</h3>
+          <h3 class="text-center fw-semibold">Hoşgeldiniz</h3>
           <form style="width: fit-content">
             <p class="mt-4 mb-3" style="font-size: 14px">
               Şifrenizi üçüncü kişiler ile paylaşmayınız.
@@ -83,7 +95,7 @@
                 <div>
                   <input type="checkbox" name="remember-me" />
                 </div>
-                Beni Hatırla
+                <p>Beni Hatırla</p>
               </div>
               <a href="#" class="text-decoration-none text-black"
                 >Şifreni mi Unuttun?</a
@@ -146,7 +158,7 @@
       <div class="right-div-phone d-none d-md-block d-flex align-items-center">
         <img
           src="./assets/images/iphone.png"
-          style="width: 150px; margin-left: 80px"
+          style="width: 190px; margin-left: 80px"
           class="ps-4"
         />
       </div>
@@ -183,7 +195,7 @@
       </div>
     </div>
     <div class="register-now text-white p-3">
-      <p class="text-center h5">Başlamaya hazır mısın?</p>
+      <p class="text-center h3">Başlamaya hazır mısın?</p>
       <div class="text-center">
         <button>Hemen Kayıt Ol</button>
       </div>
