@@ -13,30 +13,39 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <div class="top-part">
-      <div class="container">
-        <header
-          class="header d-flex justify-content-between align-items-center"
-        >
-          <div class="icon">
-            <img src="./assets/images/icon.png" />
-          </div>
-          <div class="d-md-flex justify-content-evenly gap-4 d-none">
-            <div class="header-div">Blog Yazılarımız</div>
-            <div class="header-div">API</div>
-            <div class="header-div">Servis Listesi</div>
-            <div class="d-flex align-items-center gap-1 header-div">
-              <i class="fa-solid fa-user"></i>
-              <div>Kayıt Ol</div>
-            </div>
-          </div>
-          <div class="d-block d-md-none text-white">
-            <i class="fa-solid fa-bars fa-2xl"></i>
-          </div>
-        </header>
+    <header class="header d-flex justify-content-between align-items-center">
+      <div class="icon">
+        <img src="./assets/images/icon.png" />
       </div>
+      <div class="d-md-flex justify-content-evenly gap-4 d-none">
+        <div class="header-div">Blog Yazılarımız</div>
+        <div class="header-div">API</div>
+        <div class="header-div">Servis Listesi</div>
+        <div class="d-flex align-items-center gap-1 header-div">
+          <i class="fa-solid fa-user"></i>
+          <div>Kayıt Ol</div>
+        </div>
+      </div>
+      <div class="d-block d-md-none text-white">
+        <i
+          class="fa-solid fa-bars fa-2xl bar-icon"
+          style="cursor: pointer"
+          onclick="toggle()"
+        ></i>
+      </div>
+      <div class="toggle-sidebar">
+        <div class="sidebar-div">Blog Yazılarımız</div>
+        <div class="sidebar-div">API</div>
+        <div class="sidebar-div">Servis Listesi</div>
+        <div class="d-flex align-items-center gap-3 sidebar-div">
+          <div><i class="fa-solid fa-user"></i></div>
+          <p>Kayıt Ol</p>
+        </div>
+      </div>
+    </header>
+    <div class="top-part">
       <div
-        class="d-flex container justify-content-center justify-content-md-between flex-sm-wrap gap-3 mt-5"
+        class="d-flex container justify-content-center justify-content-md-between flex-wrap gap-3 mt-5"
       >
         <div class="header-left-side">
           <h2 class="text-white">
@@ -53,7 +62,7 @@
         </div>
         <div class="bg-white form-login rounded-3 px-4 py-1">
           <h3 class="text-center fw-bold">Hoşgeldiniz</h3>
-          <form>
+          <form style="width: fit-content">
             <p class="mt-4 mb-3" style="font-size: 14px">
               Şifrenizi üçüncü kişiler ile paylaşmayınız.
             </p>
@@ -67,10 +76,14 @@
               <p class="my-2" style="color: rgb(173, 173, 173)">Şifre</p>
               <input type="password" name="password" />
             </div>
-            <div class="d-flex justify-content-between my-3 p-2">
-              <div class="d-flex align-items-center gap-1">
-                <input type="checkbox" name="" id="" />
-                <p class="text-nowrap">Beni Hatırla</p>
+            <div
+              class="justify-content-between d-flex flex-wrap my-3 gap-2 p-2"
+            >
+              <div class="d-flex align-items-center text-nowrap gap-1">
+                <div>
+                  <input type="checkbox" name="remember-me" />
+                </div>
+                Beni Hatırla
               </div>
               <a href="#" class="text-decoration-none text-black"
                 >Şifreni mi Unuttun?</a
@@ -88,28 +101,28 @@
     <div class="container">
       <div class="social-media pt-2">
         <h4 class="text-center mb-3">Sosyal medya bizim işimiz</h4>
-        <div class="d-flex justify-content-around">
+        <div class="d-flex justify-content-around flex-wrap gap-3">
           <div class="social-media-div">
-            <img src="./assets/images/instagram.png" alt="" />
+            <img src="./assets/images/instagram.png" />
             <p>Instagram</p>
           </div>
           <div class="social-media-div">
-            <img src="./assets/images/facebook.png" alt="" />
+            <img src="./assets/images/facebook.png" />
             <p>Facebook</p>
           </div>
           <div class="social-media-div">
-            <img src="./assets/images/twitter.png" alt="" />
+            <img src="./assets/images/twitter.png" />
             <p>Twitter</p>
           </div>
           <div class="social-media-div">
-            <img src="./assets/images/tiktok.png" alt="" />
+            <img src="./assets/images/tiktok.png" />
             <p>TikTok</p>
           </div>
         </div>
       </div>
     </div>
-    <div class="d-flex align-items-center mt-5">
-      <div class="ps-5">
+    <div class="d-flex align-items-center mt-5 div-important">
+      <div>
         <div class="d-flex mt-4">
           <div class="d-flex align-items-center gap-3">
             <img src="./assets/images/verified.png" style="width: 50px" />
@@ -133,29 +146,37 @@
       <div class="right-div-phone d-none d-md-block d-flex align-items-center">
         <img
           src="./assets/images/iphone.png"
-          style="width: 140px"
-          class="ps-4 mt-4"
+          style="width: 150px; margin-left: 80px"
+          class="ps-4"
         />
       </div>
     </div>
-    <div class="container">
-      <div class="d-flex">
-        <div></div>
+    <div class="container my-5">
+      <div class="d-flex justify-content-evenly align-items-center flex-wrap">
+        <img src="./assets/images/Katman 4.png" class="woman-div-img" />
         <div>
-          <div class="bottom-divs d-flex align-items-cener">
-            <img src="" alt="" />
+          <div
+            class="bottom-divs d-flex align-items-center gap-3 p-3 justify-content-between"
+          >
+            <img src="./assets/images/diamond.png" />
             <p>Güncel Kaliteli Servisler</p>
           </div>
-          <div class="bottom-divs d-flex align-items-cener">
-            <img src="" alt="" />
+          <div
+            class="bottom-divs d-flex align-items-center gap-3 p-3 justify-content-between"
+          >
+            <img src="./assets/images/time.png" />
             <p>Anlık Otomatik Gönderim</p>
           </div>
-          <div class="bottom-divs d-flex align-items-cener">
-            <img src="" alt="" />
+          <div
+            class="bottom-divs d-flex align-items-center gap-3 p-3 justify-content-between"
+          >
+            <img src="./assets/images/card.png" />
             <p>Çoklu Ödeme Seçenekleri</p>
           </div>
-          <div class="bottom-divs d-flex align-items-cener">
-            <img src="" alt="" />
+          <div
+            class="bottom-divs d-flex align-items-center gap-3 p-3 justify-content-between"
+          >
+            <img src="./assets/images/iletisim.png" />
             <p>7/24 Online Destek</p>
           </div>
         </div>
@@ -167,7 +188,9 @@
         <button>Hemen Kayıt Ol</button>
       </div>
     </div>
-    <div class="d-flex text-white footer-div justify-content-around">
+    <div
+      class="d-flex text-white footer-div justify-content-around flex-wrap gap-4"
+    >
       <p>Kullanıcı Sözleşmesi</p>
       <p>TRmediam © 2023 Tüm hakları saklıdır.</p>
       <p>Sık Sorulan Sorular</p>
@@ -177,6 +200,11 @@
     <script src="./assets/fontawesome-6.2.0/js/all.min.js"></script>
     <script src="./assets/jquery/jquery.js"></script>
     <script src="./assets/js/script.js"></script>
-    <script></script>
+    <script>
+      console.log("messi");
+      function toggle() {
+        $(".toggle-sidebar").toggle(300);
+      }
+    </script>
   </body>
 </html>

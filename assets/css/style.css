@@ -121,6 +121,21 @@ table {
   border-spacing: 0;
 }
 
+body {
+  background-color: #f7f8fc;
+}
+
+* {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  padding: 20px 6%;
+  background-color: #4255dc;
+  left: 0;
+}
 .icon > img {
   width: 90px;
 }
@@ -164,9 +179,9 @@ form {
 }
 
 form input {
-  width: 100%;
   border-radius: 3px;
   padding: 4px;
+  width: 100%;
   border: 1px solid #c0c0c0;
 }
 
@@ -180,8 +195,9 @@ form input:focus {
   display: flex;
   gap: 5px;
   align-items: center;
-  padding: 4px;
-  border-radius: 5px;
+  padding: 8px;
+  border-radius: 10px;
+  background-color: white;
 }
 
 .social-media-div p {
@@ -210,19 +226,19 @@ form input:focus {
 }
 
 .right-div-phone {
-  width: 50%;
-  border-radius: 50px 0 0 50px;
-  background: linear-gradient(
-    311deg,
-    rgba(221, 129, 0, 1) 0%,
-    rgba(255, 213, 158, 1) 100%
-  );
+  width: 100%;
+  padding-top: 2px;
+  border-radius: 100px 0 0 100px;
+  background: linear-gradient(311deg, #e2773d, #dfb097);
 }
 
 .bottom-divs {
-  border-radius: 5px;
-  border: 1px solid gray;
+  border-radius: 15px;
+  background-color: white;
+  font-size: 20px;
+  border: 1px solid #eff1fb;
   padding: 5px;
+  margin: 20px;
 }
 
 .register-now {
@@ -242,6 +258,41 @@ form input:focus {
   padding: 10px 20px;
 }
 
+.toggle-sidebar {
+  background-color: #4255dc;
+  position: fixed;
+  width: 100vw;
+  height: calc(100vh - 80px);
+  left: 0;
+  padding: 8%;
+  color: white;
+  top: 80px;
+  display: none;
+}
+
+.sidebar-div {
+  background-color: #e27032;
+  color: white;
+  padding: 6px;
+  font-size: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  width: fit-content;
+}
+
+.left-100 {
+  left: 100%;
+}
+
+.woman-div-img {
+  background-color: #4255dc;
+  border-radius: 35px;
+}
+
+.div-important {
+  padding-left: 13%;
+}
+
 @media only screen and (max-width: 768px) {
   .form-login {
     width: 100%;
@@ -251,5 +302,8 @@ form input:focus {
   }
   .parag {
     width: 80%;
+  }
+  .div-important {
+    padding-left: 14%;
   }
 }
