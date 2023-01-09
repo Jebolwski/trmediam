@@ -177,6 +177,10 @@ body {
   padding: 10px;
 }
 
+.en-eski {
+  width: 70%;
+}
+
 .login-button {
   width: 100%;
   font-family: "daikon";
@@ -363,6 +367,9 @@ form input:focus {
   .form-login {
     width: 100%;
   }
+  .en-eski {
+    width: 100%;
+  }
   .header-left-side {
     width: 100%;
   }
@@ -370,7 +377,8 @@ form input:focus {
     width: 80%;
   }
   .div-important {
-    padding-left: 14%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
   .woman-div-img {
     width: 250px;
