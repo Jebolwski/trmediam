@@ -200,7 +200,7 @@ body {
 }
 
 .parag {
-  width: 350px;
+  width: 430px;
   color: white;
 }
 
@@ -374,5 +374,8 @@ form input:focus {
   }
   .woman-div-img {
     width: 250px;
+  }
+  .uygun-fiyat {
+    width: 60vw;
   }
 }
