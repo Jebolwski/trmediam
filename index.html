@@ -18,7 +18,7 @@
         <img src="./assets/images/icon.png" />
       </div>
       <div
-        class="d-md-flex justify-content-evenly align-items-center gap-4 d-none"
+        class="d-md-flex justify-content-evenly align-items-center gap-lg-4 gap-md-2 d-none"
       >
         <a href="#" class="header-div">Blog Yazılarımız</a>
         <a href="#" class="header-div">API</a>
@@ -27,37 +27,6 @@
           <i class="fa-solid fa-user"></i>
           <div>Kayıt Ol</div>
         </a>
-      </div>
-      <div class="d-block d-md-none text-white">
-        <i
-          class="fa-solid fa-bars fa-2xl bar-icon"
-          style="cursor: pointer"
-          onclick="toggle()"
-        ></i>
-      </div>
-      <div class="toggle-sidebar">
-        <div
-          class="d-flex justify-content-between align-items-center"
-          style="padding: 0 5.8% 0 15px"
-        >
-          <div class="icon">
-            <img src="./assets/images/icon.png" />
-          </div>
-          <div class="d-block text-white">
-            <i
-              class="fa-solid fa-bars fa-2xl bar-icon"
-              style="cursor: pointer"
-              onclick="toggle()"
-            ></i>
-          </div>
-        </div>
-        <div class="sidebar-div">Blog Yazılarımız</div>
-        <div class="sidebar-div">API</div>
-        <div class="sidebar-div">Servis Listesi</div>
-        <div class="d-flex align-items-center gap-3 sidebar-div">
-          <div><i class="fa-solid fa-user"></i></div>
-          <p>Kayıt Ol</p>
-        </div>
       </div>
     </header>
     <div class="top-part">
@@ -209,6 +178,28 @@
       <p>TRmediam © 2023 Tüm hakları saklıdır.</p>
       <p>Sık Sorulan Sorular</p>
     </div>
+    <div class="mobile-footer bg-white d-block d-md-none">
+      <div class="d-flex align-items-center justify-content-evenly gap-5 p-2">
+        <div class="mobile-footer-div">
+          <div class="text-center icon mb-1">
+            <i class="fa-solid fa-rectangle-list"></i>
+          </div>
+          <div class="text-center">Servis Listesi</div>
+        </div>
+        <div class="mobile-footer-div active">
+          <div class="text-center icon mb-1">
+            <i class="fa-solid fa-user-plus"></i>
+          </div>
+          <div class="text-center">Kayıt Ol</div>
+        </div>
+        <div class="mobile-footer-div">
+          <div class="text-center icon mb-1">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+          <div class="text-center">API</div>
+        </div>
+      </div>
+    </div>
 
     <script src="./assets/bootstrap-5.2.1/js/bootstrap.min.js"></script>
     <script src="./assets/fontawesome-6.2.0/js/all.min.js"></script>
@@ -219,6 +210,11 @@
       function toggle() {
         $(".toggle-sidebar").toggle(300);
       }
+
+      $(".mobile-footer-div").click(function () {
+        $(".mobile-footer-div").removeClass("active");
+        $(this).addClass("active");
+      });
     </script>
   </body>
 </html>

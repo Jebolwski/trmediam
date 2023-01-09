@@ -126,7 +126,8 @@ body {
 }
 
 * {
-  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+  /* font-family: "Times New Roman", Times, serif; */
 }
 
 .header {
@@ -143,7 +144,7 @@ body {
   text-decoration: none;
   padding: 10px 22px;
   border-radius: 5px;
-  transition: 0.2s;
+  transition: 0.2s ease-in;
 }
 
 .header-div:hover {
@@ -307,10 +308,6 @@ form input:focus {
   width: fit-content;
 }
 
-.left-100 {
-  left: 100%;
-}
-
 .woman-div-img {
   background-color: #4255dc;
   border-radius: 35px;
@@ -318,6 +315,37 @@ form input:focus {
 
 .div-important {
   padding-left: 13%;
+}
+
+.mobile-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+}
+
+.mobile-footer-div {
+  cursor: pointer;
+  width: 100px;
+}
+
+.mobile-footer-div.active > .icon {
+  background-color: #155be1;
+  height: 40px;
+  color: white;
+  width: 40px;
+  display: flex;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  border: 3px solid #9fc5ff74;
+  margin-top: -20px;
+}
+
+.mobile-footer-div.active .icon {
+  scale: 1.1;
 }
 
 @media only screen and (max-width: 768px) {
