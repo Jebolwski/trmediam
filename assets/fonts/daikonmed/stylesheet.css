@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Daikon';
+    src: url('Daikon-Medium.eot');
+    src: url('Daikon-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Daikon-Medium.woff2') format('woff2'),
+        url('Daikon-Medium.woff') format('woff'),
+        url('Daikon-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

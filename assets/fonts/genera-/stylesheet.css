@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Genera Alt';
+    src: url('Genera-AltLight.eot');
+    src: url('Genera-AltLight.eot?#iefix') format('embedded-opentype'),
+        url('Genera-AltLight.woff2') format('woff2'),
+        url('Genera-AltLight.woff') format('woff'),
+        url('Genera-AltLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
